@@ -155,6 +155,8 @@
     <Content Include="aminrup\files\extra-pages\comming-soon\fonts\ionicons.woff" />
     <Content Include="aminrup\files\extra-pages\landingpage\assets\fonts\ionicons.ttf" />
     <Content Include="aminrup\files\extra-pages\landingpage\assets\fonts\ionicons.woff" />
+    <Content Include="aminrup\_default\aminrup_admin.Master" />
+    <None Include="Properties\PublishProfiles\apps.aminruptechnologies.co.in - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1704,7 +1706,6 @@
     <Content Include="aminrup\_default\accordion.htm" />
     <Content Include="aminrup\_default\ace-editor.htm" />
     <Content Include="aminrup\_default\alert.htm" />
-    <Content Include="aminrup\_default\aminrup_admin.Master" />
     <Content Include="aminrup\_default\animation.htm" />
     <Content Include="aminrup\_default\auth-lock-screen.htm" />
     <Content Include="aminrup\_default\auth-modal.htm" />
