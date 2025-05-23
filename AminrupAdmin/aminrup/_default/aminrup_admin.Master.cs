@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace AminrupAdmin
+namespace AminrupAdmin.aminrup._default
 {
     public partial class aminrup_admin : System.Web.UI.MasterPage
     {

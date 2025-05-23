@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AminrupAdmin {
+namespace AminrupAdmin.aminrup._default {
     
     
     public partial class aminrup_admin {
