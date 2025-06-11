@@ -66,6 +66,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aminrup\files\assets\images\android-chrome-192x192.png" />
+    <Content Include="aminrup\files\assets\images\android-chrome-512x512.png" />
+    <Content Include="aminrup\files\assets\images\apple-touch-icon.png" />
+    <Content Include="aminrup\files\assets\images\favicon-16x16.png" />
+    <Content Include="aminrup\files\assets\images\favicon-32x32.png" />
+    <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.woff" />
@@ -156,6 +162,7 @@
     <Content Include="aminrup\files\extra-pages\landingpage\assets\fonts\ionicons.ttf" />
     <Content Include="aminrup\files\extra-pages\landingpage\assets\fonts\ionicons.woff" />
     <Content Include="aminrup\_default\aminrup_admin.Master" />
+    <Content Include="aminrup\files\assets\images\site.webmanifest" />
     <None Include="Properties\PublishProfiles\apps.aminruptechnologies.co.in - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1916,6 +1923,13 @@
     </Compile>
     <Compile Include="aminrup\_default\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

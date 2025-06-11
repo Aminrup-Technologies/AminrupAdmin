@@ -530,10 +530,7 @@ function overflowAutoOrScroll(el) {
  ***********************************************/
 
 function addEvent(type, fn) {
-    const passiveTypes = ['touchstart', 'touchmove', 'wheel'];
-    const useCapture = false;
-    const passive = passiveTypes.includes(type) ? { passive: false } : useCapture;
-    window.addEventListener(type, fn, passive);
+    window.addEventListener(type, fn, false);
 }
 
 function removeEvent(type, fn) {

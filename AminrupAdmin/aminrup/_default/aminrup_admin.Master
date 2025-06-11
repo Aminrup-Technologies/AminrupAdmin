@@ -2,9 +2,16 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 <head runat="server">
     <title></title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +21,104 @@
 
     <!-- Favicon icon -->
     <link rel="icon" href="/aminrup/files/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/aminrup/files/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/aminrup/files/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/aminrup/files/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/aminrup/files/assets/images/site.webmanifest">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <!-- Required Fremwork -->
     <link type="text/css" href="/aminrup/files/bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- feather Awesome -->
-    <link type="text/css" href="/aminrup/files/assets/icon/feather/css/feather.css" rel="stylesheet" />
+    <link href="../files/assets/icon/feather/css/feather.css" rel="stylesheet" />
     <!-- Style.css -->
     <link type="text/css" href="/aminrup/files/assets/css/style.css" rel="stylesheet" />
     <link type="text/css" href="/aminrup/files/assets/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="/aminrup/files/bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/aminrup/files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/aminrup/files/bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="/aminrup/files/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="/aminrup/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="/aminrup/files/bower_components/modernizr/js/modernizr.js"></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="/aminrup/files/bower_components/chart.js/js/Chart.js"></script>
+    <!-- amchart js -->
+    <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/amcharts.js"></script>
+    <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/serial.js"></script>
+    <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/light.js"></script>
+
+    <script type="text/javascript" src="/aminrup/files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/aminrup/files/assets/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="/aminrup/files/assets/js/pcoded.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/aminrup/files/assets/js/vartical-layout.min.js"></script>
+    <%--<script type="text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js"></script>--%>
+    <script type="text/javascript" src="/aminrup/files/assets/js/script.min.js"></script>
+    <style type="text/css">
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .chartjs-render-monitor {
+            animation: chartjs-render-animation 0.001s;
+        }
+
+        .chartjs-size-monitor,
+        .chartjs-size-monitor-expand,
+        .chartjs-size-monitor-shrink {
+            position: absolute;
+            direction: ltr;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: -1;
+        }
+
+            .chartjs-size-monitor-expand > div {
+                position: absolute;
+                width: 1000000px;
+                height: 1000000px;
+                left: 0;
+                top: 0;
+            }
+
+            .chartjs-size-monitor-shrink > div {
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+            }
+
+            @media only screen and (max-width: 992px) {
+            .header-navbar .navbar-wrapper .navbar-logo .mobile-menu {
+                display: block;
+                position: absolute;
+                /* left: 10px; */
+                top: 10px;
+                right: auto;
+            }
+        }
+    </style>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body themebg-pattern="pattern4">
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="ball-scale">
@@ -65,9 +157,9 @@
         </div>
     </div>
     <!-- Pre-loader end -->
+    <form id="form1" runat="server">
+        <div id="pcoded" class="pcoded">
 
-    <div id="pcoded" class="pcoded">
-        <form id="form1" runat="server">
             <div class="pcoded-overlay-box"></div>
             <div class="pcoded-container navbar-wrapper">
                 <nav class="navbar header-navbar pcoded-header">
@@ -78,7 +170,7 @@
                                 <i class="feather icon-menu"></i>
                             </a>
                             <a href="index-1.htm">
-                                <img class="img-fluid" src="/aminrup/files/assets/images/logo.png" alt="Theme-Logo">
+                                <img class="img-fluid" src="/aminrup/files/assets/images/favicon-32x32.png" alt="Theme-Logo">
                             </a>
                             <a class="mobile-options">
                                 <i class="feather icon-more-horizontal"></i>
@@ -166,27 +258,27 @@
                                             <li>
                                                 <a href="#!">
                                                     <i class="feather icon-settings"></i>Settings
-                                            </a>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="user-profile.htm">
                                                     <i class="feather icon-user"></i>Profile
-                                            </a>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="email-inbox.htm">
                                                     <i class="feather icon-mail"></i>My Messages
-                                            </a>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="auth-lock-screen.htm">
                                                     <i class="feather icon-lock"></i>Lock Screen
-                                            </a>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="auth-normal-sign-in.htm">
                                                     <i class="feather icon-log-out"></i>Logout
-                                            </a>
+                                                </a>
                                             </li>
                                         </ul>
 
@@ -269,7 +361,7 @@
                     <div class="media chat-inner-header">
                         <a class="back_chatBox">
                             <i class="feather icon-chevron-left"></i>Josephin Doe
-                    </a>
+                        </a>
                     </div>
                     <div class="media chat-messages">
                         <a class="media-left photo-table" href="#!">
@@ -324,12 +416,12 @@
                                                 </a>
                                             </li>
                                             <li class="">
-                                                <a href="dashboard-crm.htm">
+                                                <a href="/aminrup/_default/dashboard-crm.htm">
                                                     <span class="pcoded-mtext">CRM</span>
                                                 </a>
                                             </li>
                                             <li class=" ">
-                                                <a href="dashboard-analytics.htm">
+                                                <a href="/aminrup/_default/dashboard-analytics.htm">
                                                     <span class="pcoded-mtext">Analytics</span>
                                                     <span class="pcoded-badge label label-info ">NEW</span>
                                                 </a>
@@ -1167,7 +1259,7 @@
                                         </ul>
                                     </li>
                                     <li class="">
-                                        <a href="/aminrup\files\extra-pages\landingpage\index.htm" target="_blank">
+                                        <a href="..\aminrup\files\extra-pages\landingpage\index.htm" target="_blank">
                                             <span class="pcoded-micon"><i class="feather icon-navigation-2"></i></span>
                                             <span class="pcoded-mtext">Landing Page</span>
                                         </a>
@@ -1689,42 +1781,13 @@
                             </div>
                         </nav>
 
-
-                        <div>
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                            </asp:ContentPlaceHolder>
-                        </div>
-
-
-
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                     </div>
                 </div>
             </div>
-            <!-- Required Jquery -->
-            <%--<script data-cfasync="false" src="..\..\..\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js"></script>--%>
-            <script type="text/javascript" src="/aminrup/files/bower_components/jquery/js/jquery.min.js"></script>
-            <script type="text/javascript" src="/aminrup/files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-            <script type="text/javascript" src="/aminrup/files/bower_components/popper.js/js/popper.min.js"></script>
-            <script type="text/javascript" src="/aminrup/files/bower_components/bootstrap/js/bootstrap.min.js"></script>
-            <!-- jquery slimscroll js -->
-            <script type="text/javascript" src="/aminrup/files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
-            <!-- modernizr js -->
-            <script type="text/javascript" src="/aminrup/files/bower_components/modernizr/js/modernizr.js"></script>
-            <!-- Chart js -->
-            <script type="text/javascript" src="/aminrup/files/bower_components/chart.js/js/Chart.js"></script>
-            <!-- amchart js -->
-            <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/amcharts.js"></script>
-            <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/serial.js"></script>
-            <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/light.js"></script>
+        </div>
 
-            <script type="text/javascript" src="/aminrup/files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-            <script type="text/javascript" src="/aminrup/files/assets/js/SmoothScroll.js"></script>
-            <script type="text/javascript" src="/aminrup/files/assets/js/pcoded.min.js"></script>
-            <!-- custom js -->
-            <script type="text/javascript" src="/aminrup/files/assets/js/vartical-layout.min.js"></script>
-            <%--<script type="text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js"></script>--%>
-            <script type="text/javascript" src="/aminrup/files/assets/js/script.min.js"></script>
-        </form>
-    </div>
+    </form>
+
 </body>
 </html>
