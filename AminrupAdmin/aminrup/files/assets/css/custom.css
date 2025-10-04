@@ -1,0 +1,26 @@
+﻿.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d;
+}
+.password-toggle:hover {
+    color: #007bff;
+}
+.text-inverse a, .text-inverse a:hover, .text-inverse a:focus {
+    color: inherit !important;
+    text-decoration: none;
+}
+.text-inverse a:hover {
+    text-decoration: underline;
+}
+.text-inverse a, .text-inverse a:hover {
+    color: inherit !important;
+    text-decoration: none;
+}
+.text-inverse a:hover span {
+    text-decoration: underline;
+}
