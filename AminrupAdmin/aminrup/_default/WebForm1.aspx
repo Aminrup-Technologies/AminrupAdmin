@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/aminrup/_default/aminrup_admin.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="AminrupAdmin.aminrup._default.WebForm1" %>
+﻿<%@ Page Title="Next-Sure ERP | Trail WebForm" Language="C#" MasterPageFile="~/aminrup/_default/aminrup_admin.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="AminrupAdmin.aminrup._default.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

@@ -4,7 +4,7 @@
 
 <html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 <head runat="server">
-    <title></title>
+    <title>Next-Sure ERP</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -55,7 +55,8 @@
     <script type="text/javascript" src="/aminrup/files/assets/js/SmoothScroll.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/js/pcoded.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="/aminrup/files/assets/js/vartical-layout.min.js"></script>
+    <%--<script type="text/javascript" src="/aminrup/files/assets/js/vartical-layout.min.js"></script>--%>
+    <script src="/aminrup/files/assets/js/menu/menu-header-fixed.js"></script>
     <%--<script type="text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js"></script>--%>
     <script type="text/javascript" src="/aminrup/files/assets/js/script.min.js"></script>
     <style type="text/css">
@@ -104,7 +105,7 @@
                 top: 0;
             }
 
-            @media only screen and (max-width: 992px) {
+        @media only screen and (max-width: 992px) {
             .header-navbar .navbar-wrapper .navbar-logo .mobile-menu {
                 display: block;
                 position: absolute;
@@ -159,7 +160,6 @@
     <!-- Pre-loader end -->
     <form id="form1" runat="server">
         <div id="pcoded" class="pcoded">
-
             <div class="pcoded-overlay-box"></div>
             <div class="pcoded-container navbar-wrapper">
                 <nav class="navbar header-navbar pcoded-header">
@@ -169,10 +169,10 @@
                             <a class="mobile-menu" id="mobile-collapse" href="#!">
                                 <i class="feather icon-menu"></i>
                             </a>
-                            <a href="index-1.htm">
-                                <img class="img-fluid" src="/aminrup/files/assets/images/favicon-32x32.png" alt="Theme-Logo">
+                            <a href="WebForm1.aspx">
+                                <img class="img-fluid" src="/aminrup/files/assets/images/Vaaman-engineers-2.png" alt="Theme-Logo">
                             </a>
-                            <a class="mobile-options">
+                            <a class="mobile-options d-lg-none">
                                 <i class="feather icon-more-horizontal"></i>
                             </a>
                         </div>
@@ -1784,6 +1784,10 @@
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                     </div>
                 </div>
+
+            </div>
+            <div class="footer bg-inverse">
+                <p class="text-center">Copyright &copy; 2025 Powered by Aminrup Technologies, Jamshedpur, JH - All rights reserved.</p>
             </div>
         </div>
 
