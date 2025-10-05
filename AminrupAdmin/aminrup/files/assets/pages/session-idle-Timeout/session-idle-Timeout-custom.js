@@ -2,15 +2,17 @@
 $(document).ready(function() {
 
     // Idle timeout
-    $.sessionTimeout({
-        heading: 'h5',
-        title: 'Idle Timeout',
-        message: 'Your session is about to expire. Do you want to stay connected?',
-        warnAfter: 5000,
-        redirAfter: 15000,
-        keepAliveUrl: '/',
-        redirUrl: 'session-idle-timeout.html',
-        logoutUrl: 'session-idle-timeout.html'
-    });
+    //$.sessionTimeout({
+    //    heading: 'h5',
+    //    title: 'Idle Timeout',
+    //    message: 'Your session is about to expire due to inactivity. Do you want to stay connected?',
+    //    warnAfter: 900000,
+    //    redirAfter: 1200000,
+    //    keepAliveUrl: 'KeepAlive.aspx',
+    //    redirUrl: '../../index.aspx',
+    //    logoutUrl: '../../index.aspx'
+    //});
     
+    // Idle timeout 
+    $.sessionTimeout({ heading: 'h5', title: 'Idle Timeout', message: 'Your session is about to expire. Do you want to stay connected?', warnAfter: 30000, redirAfter: 90000, keepAliveUrl: 'KeepAlive.aspx', redirUrl: '../../index.aspx', logoutUrl: '../../index.aspx' });
 });

@@ -11,6 +11,10 @@ namespace AminrupAdmin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // after validating credentials
+            //Session["UserName"] = "Testing";
+            //Session["LoginUtc"] = DateTime.UtcNow;
+            //Session["AbsoluteExpiryUtc"] = DateTime.UtcNow.AddHours(8); // absolute session limit, change as required
 
         }
     }

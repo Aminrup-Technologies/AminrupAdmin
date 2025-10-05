@@ -16,7 +16,7 @@
                     u = a > 0 ? a + "m" : "";
                 u.length > 0 && (u += " "), u += r + "s", i.text(u) } else i.text(n + "s");
             d.countdownBar && e(".countdown-bar").css("width", l.percentLeft + "%"), l.timeLeft = l.timeLeft - 1, l.timer = setTimeout(function() { s(t) }, 1e3) }
-        var a, r = { title: "Your Session is About to Expire!", message: "Your session is about to expire.", logoutButton: "Logout", keepAliveButton: "Stay Connected", keepAliveUrl: "/new-able/default/session-timeout.html", ajaxType: "POST", ajaxData: "", redirUrl: "/timed-out", logoutUrl: "/log-out", warnAfter: 9e5, redirAfter: 12e5, keepAliveInterval: 5e3, keepAlive: !0, ignoreUserActivity: !1, onStart: !1, onWarn: !1, onRedir: !1, countdownMessage: !1, countdownBar: !1, countdownSmart: !1 },
+        var a, r = { title: "Your Session is About to Expire!", message: "Your session is about to expire.", logoutButton: "Logout", keepAliveButton: "Stay Connected", keepAliveUrl: "/aminrup/default/WebForm1.aspx", ajaxType: "POST", ajaxData: "", redirUrl: "/timed-out", logoutUrl: "/log-out", warnAfter: 9e5, redirAfter: 12e5, keepAliveInterval: 5e3, keepAlive: !0, ignoreUserActivity: !1, onStart: !1, onWarn: !1, onRedir: !1, countdownMessage: !1, countdownBar: !1, countdownSmart: !1 },
             d = r,
             l = {};
         if (t && (d = e.extend(r, t)), d.warnAfter >= d.redirAfter) return console.error('Bootstrap-session-timeout plugin is miss-configured. Option "redirAfter" must be equal or greater than "warnAfter".'), !1;
@@ -36,9 +36,9 @@
 
 $(document).ready(function() {
     $.sessionTimeout({
-        warnAfter: 3000,
+        warnAfter: 30000,
         redirAfter: 300000,
         message: 'Your session is expiring soon.',
-        logoutUrl: 'session-timeout.html'
+        logoutUrl: 'WebForm1.aspx'
     });
 });

@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/aminrup/files/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/aminrup/files/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/aminrup/files/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/aminrup/files/assets/images/site.webmanifest">
+    <link rel="manifest" href="../files/assets/images/site.webmanifest">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <!-- Required Fremwork -->
@@ -50,14 +50,17 @@
     <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/amcharts.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/serial.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/pages/widget/amchart/light.js"></script>
-
-    <script type="text/javascript" src="/aminrup/files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="/aminrup/files/assets/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/js/pcoded.min.js"></script>
-    <!-- custom js -->
+    <script src="/aminrup/files/assets/js/SmoothScroll.js"></script>
+    <!-- Session timeout js -->
+    
+    <script type="text/javascript" src="/aminrup/files/assets/pages/session-idle-Timeout/session-idle-Timeout-custom.js"></script>
+    <script type="text/javascript" src="/aminrup/files/assets/pages/session-idle-Timeout/session_timeout.min.js"></script>
+
     <%--<script type="text/javascript" src="/aminrup/files/assets/js/vartical-layout.min.js"></script>--%>
     <script src="/aminrup/files/assets/js/menu/menu-header-fixed.js"></script>
-    <%--<script type="text/javascript" src="../files/assets/pages/dashboard/custom-dashboard.js"></script>--%>
+    <script type="text/javascript" src="/aminrup/files/assets/pages/dashboard/custom-dashboard.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/js/script.min.js"></script>
     <style type="text/css">
         @keyframes chartjs-render-animation {
@@ -120,6 +123,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body themebg-pattern="pattern4">
+
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="ball-scale">
@@ -158,9 +162,11 @@
         </div>
     </div>
     <!-- Pre-loader end -->
+
     <form id="form1" runat="server">
         <div id="pcoded" class="pcoded">
             <div class="pcoded-overlay-box"></div>
+
             <div class="pcoded-container navbar-wrapper">
                 <nav class="navbar header-navbar pcoded-header">
                     <div class="navbar-wrapper">
@@ -179,7 +185,7 @@
 
                         <div class="navbar-container container-fluid">
                             <ul class="nav-left">
-                                <li class="header-search">
+                                <%--<li class="header-search">
                                     <div class="main-search morphsearch-search">
                                         <div class="input-group">
                                             <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
@@ -187,13 +193,14 @@
                                             <span class="input-group-addon search-btn"><i class="feather icon-search"></i></span>
                                         </div>
                                     </div>
-                                </li>
+                                </li>--%>
                                 <li>
                                     <a href="#!" onclick="javascript:toggleFullScreen()">
                                         <i class="feather icon-maximize full-screen"></i>
                                     </a>
                                 </li>
                             </ul>
+
                             <ul class="nav-right">
                                 <li class="header-notification">
                                     <div class="dropdown-primary dropdown">
@@ -201,6 +208,7 @@
                                             <i class="feather icon-bell"></i>
                                             <span class="badge bg-c-pink">5</span>
                                         </div>
+
                                         <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                             <li>
                                                 <h6>Notifications</h6>
@@ -239,6 +247,7 @@
                                         </ul>
                                     </div>
                                 </li>
+
                                 <li class="header-notification">
                                     <div class="dropdown-primary dropdown">
                                         <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
@@ -247,6 +256,7 @@
                                         </div>
                                     </div>
                                 </li>
+
                                 <li class="user-profile header-notification">
                                     <div class="dropdown-primary dropdown">
                                         <div class="dropdown-toggle" data-toggle="dropdown">
@@ -281,9 +291,9 @@
                                                 </a>
                                             </li>
                                         </ul>
-
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
@@ -1786,12 +1796,11 @@
                 </div>
 
             </div>
+
             <div class="footer bg-inverse">
                 <p class="text-center">Copyright &copy; 2025 Powered by Aminrup Technologies, Jamshedpur, JH - All rights reserved.</p>
             </div>
         </div>
-
     </form>
-
 </body>
 </html>
