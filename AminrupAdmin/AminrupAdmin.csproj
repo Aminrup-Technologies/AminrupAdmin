@@ -87,6 +87,7 @@
     <Content Include="aminrup\files\assets\images\Vaaman-engineers-2.png" />
     <Content Include="aminrup\_default\KeepAlive.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="lock_screen.aspx" />
     <Content Include="packages.config" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.woff" />
@@ -1952,6 +1953,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lock_screen.aspx.cs">
+      <DependentUpon>lock_screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lock_screen.aspx.designer.cs">
+      <DependentUpon>lock_screen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

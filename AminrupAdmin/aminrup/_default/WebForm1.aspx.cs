@@ -11,7 +11,8 @@ namespace AminrupAdmin.aminrup._default
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["LockedUserEmail"] = "abc@xyz.com";
+            Session["ReturnUrl"] = "~/aminrup/_default/WebForm1.aspx";
         }
     }
 }
