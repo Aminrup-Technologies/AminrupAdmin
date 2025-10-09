@@ -79,12 +79,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aminrup\files\assets\css\custom.css" />
+    <Content Include="aminrup\files\assets\css\style.css" />
+    <Content Include="aminrup\files\assets\css\style_old.css" />
+    <Content Include="aminrup\files\assets\css\style_old1.css" />
     <Content Include="aminrup\files\assets\images\android-chrome-192x192.png" />
     <Content Include="aminrup\files\assets\images\android-chrome-512x512.png" />
     <Content Include="aminrup\files\assets\images\apple-touch-icon.png" />
     <Content Include="aminrup\files\assets\images\favicon-16x16.png" />
     <Content Include="aminrup\files\assets\images\favicon-32x32.png" />
     <Content Include="aminrup\files\assets\images\Vaaman-engineers-2.png" />
+    <Content Include="aminrup\_default\blank_page.aspx" />
     <Content Include="aminrup\_default\KeepAlive.aspx" />
     <Content Include="index.aspx" />
     <Content Include="lock_screen.aspx" />
@@ -193,7 +197,6 @@
     <Content Include="aminrup\files\assets\css\jquery.mCustomScrollbar.css" />
     <Content Include="aminrup\files\assets\css\linearicons.css" />
     <Content Include="aminrup\files\assets\css\pcoded-horizontal.min.css" />
-    <Content Include="aminrup\files\assets\css\style.css" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont-1.hxd" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.hxd" />
     <Content Include="aminrup\files\assets\fonts\fontawesome-webfont.svg" />
@@ -1932,6 +1935,13 @@
     </Compile>
     <Compile Include="aminrup\_default\aminrup_admin.Master.designer.cs">
       <DependentUpon>aminrup_admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="aminrup\_default\blank_page.aspx.cs">
+      <DependentUpon>blank_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aminrup\_default\blank_page.aspx.designer.cs">
+      <DependentUpon>blank_page.aspx</DependentUpon>
     </Compile>
     <Compile Include="aminrup\_default\KeepAlive.aspx.cs">
       <DependentUpon>KeepAlive.aspx</DependentUpon>

@@ -851,7 +851,7 @@
     padding-bottom:30px
   }
   .main-body .page-wrapper {
-    padding:10px
+    padding:5px
   }
   .blog-page hr {
     margin-top:20px;
@@ -4750,7 +4750,7 @@ span.badge {
   position:relative
 }
 .pcoded-inner-content {
-  padding:10px
+  padding:5px
 }
 .pcoded .pcoded-navbar .pcoded-item {
   display:block;
@@ -8013,7 +8013,7 @@ p {
   padding-right:20px
 }
 .main-body .page-wrapper {
-  padding:1.8rem;
+  padding:5px;
   -webkit-transition:all ease-in 0.3s;
   transition:all ease-in 0.3s
 }

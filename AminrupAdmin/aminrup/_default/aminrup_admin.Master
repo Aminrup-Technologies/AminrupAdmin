@@ -248,14 +248,14 @@
                                     </div>
                                 </li>
 
-                                <li class="header-notification">
+                                <%--<li class="header-notification">
                                     <div class="dropdown-primary dropdown">
                                         <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
                                             <i class="feather icon-message-square"></i>
                                             <span class="badge bg-c-green">3</span>
                                         </div>
                                     </div>
-                                </li>
+                                </li>--%>
 
                                 <li class="user-profile header-notification">
                                     <div class="dropdown-primary dropdown">
@@ -281,12 +281,12 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="auth-lock-screen.htm">
+                                                <a href="../../lock_screen.aspx">
                                                     <i class="feather icon-lock"></i>Lock Screen
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="auth-normal-sign-in.htm">
+                                                <a href="../../index.aspx">
                                                     <i class="feather icon-log-out"></i>Logout
                                                 </a>
                                             </li>
@@ -300,7 +300,7 @@
                 </nav>
 
                 <!-- Sidebar chat start -->
-                <div id="sidebar" class="users p-chat-user showChat">
+                <%--<div id="sidebar" class="users p-chat-user showChat">
                     <div class="had-container">
                         <div class="card card_main p-fixed users-main">
                             <div class="user-box">
@@ -364,10 +364,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--%>
 
                 <!-- Sidebar inner chat start-->
-                <div class="showChat_inner">
+                <%--<div class="showChat_inner">
                     <div class="media chat-inner-header">
                         <a class="back_chatBox">
                             <i class="feather icon-chevron-left"></i>Josephin Doe
@@ -405,9 +405,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div>--%>
                 <!-- Sidebar inner chat end-->
+
+
                 <div class="pcoded-main-container">
                     <div class="pcoded-wrapper">
                         <nav class="pcoded-navbar">
