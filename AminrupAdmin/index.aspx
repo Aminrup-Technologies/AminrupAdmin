@@ -15,6 +15,7 @@
     <meta name="description" content="Custom ERP" />
     <meta name="keywords" content="Next-Sure, ERP, CSMS, Aminrup Technologies, Vaaman Engineers" />
     <meta name="author" content="Aminrup Technologies, Jamshedpur, JH" />
+    
     <link rel="icon" href="aminrup/files/assets/images/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="aminrup/files/bower_components/bootstrap/css/bootstrap.min.css" />
@@ -97,14 +98,14 @@
                                     <div class="card-block">
                                         <div class="row m-b-20">
                                             <div class="col-md-12">
-                                                <h3 class="text-center">Work-Sure ERP | Sign In</h3>
+                                                <h3 class="text-center">Work-Sure ERP - Login</h3>
                                             </div>
                                         </div>
 
                                         <asp:ValidationSummary ID="vsErrors" runat="server" CssClass="text-danger" HeaderText="" />
 
                                         <div class="form-group form-primary">
-                                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" Placeholder="Your Email Address" />
+                                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" Placeholder="Your Login ID / Emaill Address" />
                                             <span class="form-bar"></span>
                                             <asp:RequiredFieldValidator ID="rfvEmail" runat="server"
                                                 ControlToValidate="txtEmail" MaxLength="50"
@@ -171,7 +172,7 @@
                                         <div class="row m-t-30">
                                             <div class="col-md-12">
                                                 <!-- keep type=button if you plan client-side handling; change to Submit or use OnClick for server handler -->
-                                                <asp:Button ID="btnSignIn" runat="server" Text="Sign in"
+                                                <asp:Button ID="btnSignIn" runat="server" Text="Login"
                                                     CssClass="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20" />
                                             </div>
                                         </div>

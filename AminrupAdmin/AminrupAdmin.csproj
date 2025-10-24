@@ -85,6 +85,10 @@
     <Content Include="aminrup\files\assets\images\android-chrome-192x192.png" />
     <Content Include="aminrup\files\assets\images\android-chrome-512x512.png" />
     <Content Include="aminrup\files\assets\images\apple-touch-icon.png" />
+    <Content Include="aminrup\files\assets\images\auth\doodle.jpg" />
+    <Content Include="aminrup\files\assets\images\auth\engg_doodle.png" />
+    <Content Include="aminrup\files\assets\images\auth\light_bg.png" />
+    <Content Include="aminrup\files\assets\images\auth\login_bg_doodle_200kb.jpg" />
     <Content Include="aminrup\files\assets\images\favicon-16x16.png" />
     <Content Include="aminrup\files\assets\images\favicon-32x32.png" />
     <Content Include="aminrup\files\assets\images\Vaaman-engineers-2.png" />

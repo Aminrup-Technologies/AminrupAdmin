@@ -185,7 +185,7 @@
                                     <div class="dropdown-primary dropdown">
                                         <div class="dropdown-toggle" data-toggle="dropdown">
                                             <img src="..\files\assets\images\avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                            <span>John Doe</span>
+                                            <span>Administrator</span>
                                             <i class="feather icon-chevron-down"></i>
                                         </div>
                                         <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
@@ -1779,12 +1779,12 @@
     
     <script type="text/javascript" src="/aminrup/files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="/aminrup/files/assets/js/script.js"></script>--%>
-    
+
     <script type="text/javascript" src="../files/bower_components/i18next/js/i18next.min.js"></script>
     <script type="text/javascript" src="../files/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="../files/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript" src="../files/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-    
+
     <script type="text/javascript" src="../files/assets/js/pcoded.min.js"></script>
 
 
