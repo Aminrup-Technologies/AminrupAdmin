@@ -24,3 +24,38 @@
 .text-inverse a:hover span {
     text-decoration: underline;
 }
+/* Hide Adminity Customizer gear icon and panel */
+#styleSelector, .theme-loader, .fixed-button {
+    display: none !important;
+}
+
+
+/* Fixed footer that sits above sidebar and content */
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45px;
+    line-height: 45px;
+    background-color: #2a3142; /* same as bg-inverse */
+    color: #ffffff;
+    z-index: 9999; /* above nav and content */
+    border-top: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.2);
+}
+
+/* make sure page content does not overlap */
+.pcoded-main-container {
+    padding-bottom: 55px; /* footer height + margin */
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+

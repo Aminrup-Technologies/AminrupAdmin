@@ -89,6 +89,7 @@
     <Content Include="aminrup\files\assets\images\favicon-32x32.png" />
     <Content Include="aminrup\files\assets\images\Vaaman-engineers-2.png" />
     <Content Include="aminrup\_default\blank_page.aspx" />
+    <Content Include="aminrup\_default\home.aspx" />
     <Content Include="aminrup\_default\KeepAlive.aspx" />
     <Content Include="index.aspx" />
     <Content Include="lock_screen.aspx" />
@@ -1942,6 +1943,13 @@
     </Compile>
     <Compile Include="aminrup\_default\blank_page.aspx.designer.cs">
       <DependentUpon>blank_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aminrup\_default\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aminrup\_default\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="aminrup\_default\KeepAlive.aspx.cs">
       <DependentUpon>KeepAlive.aspx</DependentUpon>

@@ -182,7 +182,7 @@
                                                 <p class="text-inverse text-left m-b-0">Thank you.</p>
                                                 <p class="text-inverse text-left">
                                                     <asp:HyperLink ID="hlBackToSite" runat="server"
-                                                        NavigateUrl="aminrup/_default/WebForm1.aspx" CssClass="f-w-600">
+                                                        NavigateUrl="aminrup/_default/home.aspx" CssClass="f-w-600">
                                                     <b>Back to website</b>
                                                     </asp:HyperLink>
                                                 </p>

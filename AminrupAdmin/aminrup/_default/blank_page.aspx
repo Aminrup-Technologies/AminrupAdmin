@@ -1,14 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/aminrup/_default/aminrup_admin.Master" AutoEventWireup="true" CodeBehind="blank_page.aspx.cs" Inherits="AminrupAdmin.aminrup._default.blank_page" %>
-
+﻿<%@ Page Title="Next-Sure ERP | Sample" Language="C#" MasterPageFile="~/aminrup/_default/aminrup_admin.Master" AutoEventWireup="true" CodeBehind="blank_page.aspx.cs" Inherits="AminrupAdmin.aminrup._default.blank_page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="pcoded-content">
         <div class="pcoded-inner-content">
-            <!-- Main-body start -->
             <div class="main-body">
                 <div class="page-wrapper">
-                    <!-- Page-header start -->
+
                     <div class="page-header">
                         <div class="row align-items-end">
                             <div class="col-lg-8">
@@ -23,7 +21,7 @@
                                 <div class="page-header-breadcrumb">
                                     <ul class="breadcrumb-title">
                                         <li class="breadcrumb-item">
-                                            <a href="WebForm1.aspx"><i class="feather icon-home"></i></a>
+                                            <a href="home.aspx"><i class="feather icon-home"></i></a>
                                         </li>
                                         <li class="breadcrumb-item"><a href="blank_page.aspx">Blank Page</a> </li>
                                     </ul>
@@ -37,6 +35,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card">
+
                                     <div class="card-header">
                                         <h5>Hello Card</h5>
                                         <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
@@ -44,10 +43,11 @@
                                             <ul class="list-unstyled card-option">
                                                 <li><i class="feather icon-maximize full-card"></i></li>
                                                 <li><i class="feather icon-minus minimize-card"></i></li>
-                                                <li><i class="feather icon-trash-2 close-card"></i></li>
+                                                <%--<li><i class="feather icon-trash-2 close-card"></i></li>--%>
                                             </ul>
                                         </div>
                                     </div>
+
                                     <div class="card-block">
                                         <p>
                                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -60,6 +60,7 @@
                                                    
                                         </p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
