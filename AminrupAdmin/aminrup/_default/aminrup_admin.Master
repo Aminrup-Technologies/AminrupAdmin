@@ -199,18 +199,18 @@
                                                     <i class="feather icon-user"></i>Profile
                                             </a>
                                             </li>
-                                            <li>
+                                            <%--<li>
                                                 <a href="email-inbox.htm">
                                                     <i class="feather icon-mail"></i>My Messages
                                             </a>
-                                            </li>
+                                            </li>--%>
                                             <li>
-                                                <a href="auth-lock-screen.htm">
+                                                <a href="../../lock_screen.aspx">
                                                     <i class="feather icon-lock"></i>Lock Screen
                                             </a>
                                             </li>
                                             <li>
-                                                <a href="auth-normal-sign-in.htm">
+                                                <a href="../../index.aspx">
                                                     <i class="feather icon-log-out"></i>Logout
                                             </a>
                                             </li>
@@ -289,6 +289,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Sidebar inner chat start-->
                 <div class="showChat_inner">
                     <div class="media chat-inner-header">
@@ -330,12 +331,15 @@
                     </div>
                 </div>
 
-
                 <div class="pcoded-main-container">
                     <div class="pcoded-wrapper">
                         <nav class="pcoded-navbar">
                             <div class="pcoded-inner-navbar main-menu">
-                                <div class="pcoded-navigatio-lavel">Navigation</div>
+
+                                <!-- replace static nav here with control -->
+                                <asp:Literal ID="ltrSideMenu" runat="server" />
+
+                                <%--<div class="pcoded-navigatio-lavel">Navigation</div>
                                 <ul class="pcoded-item pcoded-left-item">
                                     <li class="pcoded-hasmenu active pcoded-trigger">
                                         <a href="javascript:void(0)">
@@ -361,6 +365,7 @@
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)">
                                             <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
@@ -368,7 +373,7 @@
                                             <span class="pcoded-badge label label-warning">NEW</span>
                                         </a>
                                         <ul class="pcoded-submenu">
-                                            <li class=" pcoded-hasmenu">
+                                            <li class="pcoded-hasmenu">
                                                 <a href="javascript:void(0)">
                                                     <span class="pcoded-mtext">Vertical</span>
                                                 </a>
@@ -1710,7 +1715,7 @@
                                             <span class="pcoded-mtext">Submit Issue</span>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul>--%>
                             </div>
                         </nav>
 
